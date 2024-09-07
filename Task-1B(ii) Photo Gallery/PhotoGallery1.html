@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .gallery {
+            margin-top: 30px;
+        }
+        .gallery-item {
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container gallery">
+        <div class="row my-3">
+            <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                <img src="/photo1.png" alt="Photo 1">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                <img src="/photo2.png" alt="Photo 2">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                <img src="/photo3.png" alt="Photo 3">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                <img src="/photo4.png" alt="Photo 4">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                <img src="/photo5.png" alt="Photo 5">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 gallery-item">
+                <img src="/photo6.png" alt="Photo 6">
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
